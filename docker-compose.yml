@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  uco-flask-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: uco_presence_api
+    restart: always
+    ports:
+      - "35553:35553"
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+      - SQLITE_DB=/app/dataabsen.sqlite
+      - PORT=35553
+    volumes:
+      - ./dataabsen.sqlite:/app/dataabsen.sqlite
+    command: ["gunicorn", "-c", "gunicorn_config.py", "app:app"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:35553/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3

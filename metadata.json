@@ -1,0 +1,11 @@
+{
+  "name": "UCO Demo - MVC Real-Life Absence & Liveness System",
+  "description": "Multi View Controller (MVC) demonstration for real-life attendance and liveness check with Indonesian voice recognition, front camera photo capture, Flask Python API integration, and SQLite dataabsen storage.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
