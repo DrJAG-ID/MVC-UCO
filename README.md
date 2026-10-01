@@ -79,3 +79,5 @@ Layanan Flask akan berjalan dan melayani request di `http://localhost:35553`.
 4. `GET /databsen` -> Mengambil data log presensi (tabel `main-absence`)
 5. `POST /main-absence` -> Menyimpan presensi dari Absence-page ke `dataabsen.sqlite`
 6. `POST /init-absence` -> Menerima input form pendaftaran ID `YYYYMMDD-XYZ`
+
+## 5. Cek Wiki https://github.com/DrJAG-ID/MVC-UCO/wiki untuk demo preview login, user page, admin page, dan lainnya.
