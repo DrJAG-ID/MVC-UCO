@@ -81,3 +81,8 @@ Layanan Flask akan berjalan dan melayani request di `http://localhost:35553`.
 6. `POST /init-absence` -> Menerima input form pendaftaran ID `YYYYMMDD-XYZ`
 
 ## 5. Cek Wiki https://github.com/DrJAG-ID/MVC-UCO/wiki untuk demo preview login, user page, admin page, dan lainnya.
+
+## 6. Diagram & Flow Process
+
+<img width="1536" height="1024" alt="ChatGPT Image Oct 7, 2026, 11_46_54 AM" src="https://github.com/user-attachments/assets/7982314c-3675-4538-abf3-c779e71f6b55" />
+
